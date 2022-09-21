@@ -2,12 +2,11 @@ package com.program.course.entities.enums;
 
 public enum OrderStatus {
 	
-	WATITING_PAYMENT(1),
+	WAITING_PAYMENT(1),
 	PAID(2),
 	SHIPPED(3),
 	DELIVERED(4),
 	CANCELED(5);
-	
 	
 	
 	private int code;
@@ -28,4 +27,5 @@ public enum OrderStatus {
 		}
 		throw new IllegalArgumentException("Invalid OrderStatus code");
 	}
+
 }
